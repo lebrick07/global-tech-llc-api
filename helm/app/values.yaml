@@ -1,0 +1,20 @@
+app:
+  name: global-tech-llc-api
+  image:
+    repository: ghcr.io/lebrick07/global-tech-llc-api
+    tag: latest
+    pullPolicy: IfNotPresent
+  replicas: 1
+  port: 8080
+  service:
+    type: ClusterIP
+    port: 80
+
+ingress:
+  enabled: true
+  className: traefik
+  host: global-tech-llc.local
+
+# Environment-specific values
+namespace: global-tech-llc-dev
+environment: dev

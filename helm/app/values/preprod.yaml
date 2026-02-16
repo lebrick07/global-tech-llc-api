@@ -1,0 +1,10 @@
+namespace: global-tech-llc-preprod
+environment: preprod
+
+app:
+  image:
+    tag: dev-latest # Promoted from dev
+  replicas: 1
+
+ingress:
+  host: preprod.global-tech-llc.local
