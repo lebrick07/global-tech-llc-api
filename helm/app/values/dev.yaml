@@ -3,7 +3,7 @@ environment: dev
 
 app:
   image:
-    tag: dev-latest # Updated by CI/CD
+    tag: dev-41131e1
   replicas: 1
 
 ingress:
